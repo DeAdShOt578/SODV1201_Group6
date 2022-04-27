@@ -1,0 +1,38 @@
+<%- include ('header.ejs') %>	
+	
+	<!---- main background----->
+	<section class="main-bg1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+				<h1>List of Users</h1>
+				
+				<table class="table table-striped" border="1">
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Gender</th>
+						<th>Address</th>
+						<th>Phone</th>
+					</tr>
+					<% for(var i=0; i < data.length; i++) { %>
+					   <tr>
+						 <td><%= data[i].onwername %></td>
+						 <td><%= data[i].usertype %></td>
+						 <td><%= data[i].gender %></td>
+						 <td><%= data[i].owneraddress %></td>
+						 <td><%= data[i].ownerphone %></td>
+					   </tr>
+					<% } %>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	
+	
+	<%- include ('footer.ejs') %>	
+

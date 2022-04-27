@@ -1,0 +1,118 @@
+<%- include ('header-admin.ejs') %>
+	
+	
+	<!---- main background----->
+	<section class="main-bg">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-6 col-sm-offset-3">
+					<h1 class="text-center">Add Property</h1>
+				
+					<form action="/addproperty" method="post">
+						<hr>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Select Type</label>
+									<select id="propertytype" name="propertytype" class="form-control">
+										<option>Apartment</option>
+										<option>Bungalow</option>
+										<option>Cabin</option>
+										<option>House</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Enter Property Description</label>
+									<input type="text" class="form-control" name="propertydesc" id="desc" required/>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Select Area</label>
+									<select id="area" class="form-control" name="propertyarea" required>
+										<option>Calgary</option>
+										<option>Missisaga</option>
+										<option>Markham</option>
+										<option>Brampton</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Address</label>
+									<input type="text" class="form-control" name="propertyaddress" id="rent" required />
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Neighbourhood</label>
+									<input type="text" class="form-control" name="neighbourhood" id="rent" required />
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Sq. Feet</label>
+									<input type="number" class="form-control" name="sqfeet" id="rent" required />
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Parking Garage?</label>
+									<select id="area" class="form-control" name="parking" required >
+										<option>Yes</option>
+										<option>No</option>
+
+									</select>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Reachhable by public transport?</label>
+									<select id="area" class="form-control" name="reachable" required >
+										<option>Yes</option>
+										<option>No</option>
+
+									</select>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Property Rent</label>
+									<input type="number" class="form-control" name="propertyrent" id="rent" required />
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Phone No.</label>
+									<input type="text" class="form-control" name="contact" id="phone" required />
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<button type="submit" class="btn btn-info">Save</button>
+							</div>
+							<div class="col-sm-12" style="color:red;">
+				
+								<p style="color:red;"><%= msg %></p>
+						</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+  
+  

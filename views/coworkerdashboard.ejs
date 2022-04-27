@@ -1,0 +1,65 @@
+<%- include ('header-admin.ejs') %>
+	
+	
+	<!---- main background----->
+	<section class="main-bg1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+				<h1>Co-Worker Dashboard - List of Properties</h1>
+				
+				<table class="table table-striped" border="1">
+					<tr>
+						<th>Id</th>
+						<th>Type</th>
+						<th>Description</th>
+						<th>Area</th>
+						<th>Rent</th>
+						<th>Parking</th>
+						<th>Reachable</th>
+						<th>Neighbourhood</th>
+						<th>Rating</th>
+						<th colspan="4">Action</th>
+					</tr>
+					<% for(var i=0; i < data.length; i++) { %>
+					   <tr>
+						 <td><%= data[i].propertyid %></td>
+						 <td><%= data[i].propertytype %></td>
+						 <td><%= data[i].propertydesc %></td>
+						 <td><%= data[i].area %></td>
+						 <td><%= data[i].propertyrent %></td>
+						 <td><%= data[i].parking %></td>
+						 <td><%= data[i].reachable%></td>
+						 <td><%= data[i].neighbourhood %></td>
+						 <td><%= data[i].rating %> Star</td>
+						 <td width="300"><a href='/view/<%= data[i].propertyid %>' class="btn btn-warning">View Details</a>
+						 <a href='/rate/<%= data[i].propertyid %>' class="btn btn-danger">Rating</a>
+						
+						</td>
+
+					   </tr>
+					<% } %>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	
+	
+	<%- include ('footer.ejs') %>
+  
+  
+</html>
+
+<style>
+	.btn{
+		float:left;
+		margin-left:20px;
+		margin-top:5px;
+		width:100px;
+	}
+
+</style>

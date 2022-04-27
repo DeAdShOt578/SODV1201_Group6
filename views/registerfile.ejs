@@ -1,0 +1,84 @@
+<%- include ('header.ejs') %>	
+	
+	
+	<!---- main background----->
+	<section class="maindiv">
+		<div class="container">
+		
+			<div class="row">
+				
+				<div class="col-sm-6 col-sm-offset-3 jumbotron">
+					<h2 class="text-center">Sign Up Form</h2>
+					<form action="register" method="post">
+						
+						<hr>
+						<div class="row">			
+			<div class="col-sm-6">
+				<div class="form-group">
+				<label>Owner Name</label>
+				<input type="text" class="form-control" name="onwername" id="ownername" required/>
+				</div>
+			</div>
+			
+			<div class="col-sm-6">
+				<div class="form-group">
+				<label>Gender</label>
+				<select id="gender" name="gender" class="form-control">
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+					</div>
+			</div>
+			
+			<div class="col-sm-6">
+				<div class="form-group">
+				<label>Address</label>
+				<input type="text" class="form-control" name="owneraddress" id="address" required/>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group">
+				<label>Phone No.</label>
+				<input type="text" class="form-control" name="ownerphone" id="ownerphone" required/>
+				</div>
+			</div>
+			
+			<div class="col-sm-6">
+				<div class="form-group">
+				<label>Username</label>
+				<input type="text" class="form-control" name="owneruname" id="username" required/>
+				</div>
+			</div>
+			
+			<div class="col-sm-6">
+				<div class="form-group">
+				<label>Password</label>
+				<input type="password" class="form-control" name="ownerpwd" id="pwd" required/>
+				</div>
+			</div>
+			
+			<div class="col-sm-6">
+				<div class="form-group">
+				<label>User Type</label>
+				<select id="utype" class="form-control" name="usertype">
+					<option>Owner</option>
+					<option>Co-Worker</option>
+				</select>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<button type="submit" class="btn btn-info">Save</button>
+			</div>
+			<div class="col-sm-12" style="color:red;">
+				
+				<p style="color:red;"><%= msg %></p>
+		</div>
+		</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+

@@ -1,0 +1,15 @@
+body
+{
+	margin:0px;
+	padding:0px;
+}
+
+
+.maindiv
+{
+	background-image:url('../../images/background1.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	height:100vh;
+	padding:30px 0px 150px 0px;
+}

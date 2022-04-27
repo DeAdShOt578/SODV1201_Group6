@@ -1,0 +1,30 @@
+    
+    <%- include ('header-admin.ejs') %>	
+	
+	<!---- main background----->
+	<section class="main-bg1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+				<h1>Upload Photo</h1>
+				
+				  <div class="jumbotron">
+                    <form action="/fileupload" method="post" enctype="multipart/form-data">'
+                        <input type="file" name="filetoupload" required class="btn btn-success"><br>
+                        <input type="submit" class="btn btn-success">
+                        <button onclick="history.back();" class="btn btn-info">Back</button>
+                    </form>  
+                  </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	
+	
+	<%- include ('footer.ejs') %>	
+
+    
+    

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Suburb Estate</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	
+
+  </head>
+  <body>
+	<!---- navigation ----->
+	
+	<header>	
+	
+	<nav>
+		<div class="container">
+			<ul class="nav navbar-nav navbar-right">
+		<li><a class="btn btn-white" href="/" >Home</a></li>
+			<li><a href="/showproperty" class="btn btn-white">Show Properties</a></li>
+			<li><a class="btn btn-white" href="/register">Register</a></li>
+			<li><a class="btn btn-white" href="/showusersfile" >Show Users</a></li>
+			<li><a class="btn btn-white" href="/login">Login</a></li>
+			
+			</ul>
+		</div>
+		
+	</nav>
+
+	</header>
+	
+	
+	<!---- main background----->
+	<section class="main-bg">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-6 col-sm-offset-3 text-center">
+					<h1>Welcome To Suburb Properties</h1>
+					<form action="/search" method="post" style="border-radius:8px;border-top:6px solid #49aee8;">
+						<center>
+							<select id="search-prop" name="city" class="form-control" style="width:30%;">
+								<option>Calgary</option>
+								<option>Missisaga</option>
+								<option>Markham</option>
+								<option>Brampton</option>
+							</select>
+							<br />
+							<input type="text" name="address" placeholder="Address" />
+							<br /><br />
+							<input type="text" name="neighbourhood" placeholder="Neighbourhood" />
+							<br /><br />
+							<input type="text" name="sqfeet" placeholder="Squar feet" /><br />
+							<label>Parking?</label>
+							<select name="parking" class="form-control" style="width:30%;">
+								<option></option>
+								<option>Yes</option>
+								<option>No</option>
+							</select><br />
+							<label>Public transport facility?</label>
+							<select name="facility" class="form-control" style="width:30%;">
+								<option></option>
+								<option>Yes</option>
+								<option>No</option>
+							</select>
+						</center>
+						<br />
+						<button id="search-btn" type="submit" class="btn btn-info" style="background:#49aee8;color:#fff;">Search Now</button>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	
+	
+	<!----footer ----->
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h4 class="text-center">Developed By: Jayant Sharma, Jashanpreet Kaur Gill, Patryk Blach</h4>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+  
+  <!---- Show Search modal ----->
+  
+  
+  <div class="modal fade" id="showsearch" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Search</h4>
+      </div>
+      <div class="modal-body">
+		<div class="row">			
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h1>Welcome To Suburb Properties</h1>
+					<center>
+					<select id="search-prop" class="form-control" style="width:30%;">
+					<option>Calgary</option>
+					<option>Missisaga</option>
+					<option>Markham</option>
+					<option>Brampton</option>
+					</select>
+					</center>
+					<button id="search-btn" onclick="search();" class="btn btn-info">Search Now</button>
+				</div>
+			</div>
+			
+		</div>
+		
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</html>

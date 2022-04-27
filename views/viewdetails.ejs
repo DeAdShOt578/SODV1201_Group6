@@ -1,0 +1,101 @@
+<%- include ('header-admin.ejs') %>
+	
+	
+	<!---- main background----->
+	<section class="main-bg">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-6 col-sm-offset-3">
+					<h1 class="text-center">View Property Details</h1>
+				
+					
+						<hr>
+						<div class="row">
+							<div class="col-sm-12">
+							
+									<img src="../images/<%= data[0].propertyid %>.jpg" width="600px">
+		
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Type : <%= data[0].propertytype %></label>
+									
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Enter Property Description :<%= data[0].propertydesc %></label>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Select Area : <%= data[0].area %></label>
+								
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Address :<%= data[0].propertyaddress %></label>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Neighbourhood :<%= data[0].neighbourhood %></label>
+									
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Sq. Feet :<%= data[0].sqfeet %></label>
+									
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Parking Garage : <%= data[0].parking %></label>
+									
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Public Transport : <%= data[0].reachable %></label>
+								
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Rent Per Month:$<%= data[0].propertyrent %></label>
+									
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label>Phone No.:<%= data[0].phoneno %></label>
+									
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<button onclick="history.back();" class="btn btn-info">Back</button>
+							</div>
+							
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+  
+  
